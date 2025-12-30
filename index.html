@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Guys !</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Music/JEFEPST.png">
+
+</head>
+<body>
+    <!-- PAGE 1 -->
+    <div class="page active" id="page1">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="click-hint">Click anywhere to start</div>
+    </div>
+
+    <!-- PAGE 2 -->
+    <div class="page" id="page2">
+        <div class="vertical-line"></div>
+        <div class="vertical-line"></div>
+        <div class="vertical-line"></div>
+        <div class="vertical-line"></div>
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        
+        <div class="form-box">
+            <h1 class="form-title">Could you please give me your name</h1>
+            <div class="input-box">
+                <input type="text" class="name-input" id="nameInput" placeholder="Jeffrey Epstein" maxlength="50">
+                <div class="error-text" id="errorMsg">⚠️ Letters only please</div>
+            </div>
+            <button class="submit-btn" onclick="goToPage3()">Continue</button>
+        </div>
+    </div>
+
+    <!-- PAGE 3 -->
+    <div class="page" id="page3">
+        <video id="mainVideo" autoplay muted playsinline>
+            <!-- Ajoutez vos vidéos ici dans l'ordre -->
+            <source src="Video/VIDEO0.mp4" type="video/mp4">
+            <source src="Video/VIDEO1.mp4" type="video/mp4">
+            <source src="Video/VIDEO2.mp4" type="video/mp4">
+            <source src="Video/VIDEO3.mp4" type="video/mp4">
+            <source src="Video/VIDEO4.mp4" type="video/mp4">
+            <source src="Video/VIDEO5.mp4" type="video/mp4">
+            <source src="Video/VIDEO6.mp4" type="video/mp4">
+            <source src="Video/VIDEO7.mp4" type="video/mp4">
+            <source src="Video/VIDEO8.mp4" type="video/mp4">
+            <source src="Video/VIDEO9.mp4" type="video/mp4">
+            <source src="Video/VIDE010.mp4" type="video/mp4">
+            <source src="Video/VIDEO11.mp4" type="video/mp4">
+            <source src="Video/VIDEO12.mp4" type="video/mp4">
+            <source src="Video/VIDEO13.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+        
+        <!-- Compteur de vidéos -->
+        <div class="video-counter" id="videoCounter">1 / 5</div>
+        
+        <!-- Barre de progression -->
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+        
+        <!-- Boutons de navigation -->
+        <button class="nav-btn prev-btn" id="prevBtn" onclick="previousVideo()">
+            ←
+        </button>
+        <button class="nav-btn next-btn" id="nextBtn" onclick="nextVideo()">
+            →
+        </button>
+        
+        <!-- Message de fin -->
+        <div class="video-end-message" id="endMessage">
+            ✨ All videos completed! ✨
+        </div>
+    </div>
+
+    <!-- TRANSITION -->
+    <div class="transition" id="transition"></div>
+
+    <!-- AUDIO -->
+    <audio id="sound1">
+        <!-- Add your MP3 here -->
+        <!-- <source src="click-sound.mp3" type="audio/mpeg"> -->
+    </audio>
+    <audio id="sound2">
+        <source src="Music/CouldYouGiveUrName.mp3" type="audio/mpeg">
+        <!-- <source src="transition-sound.mp3" type="audio/mpeg"> -->
+    </audio>
+    <audio id="sound3">
+        <source src="Music/JEffreyEpst.mp3" type="audio/mpeg">
+        <!-- <source src="video-music.mp3" type="audio/mpeg"> -->
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
